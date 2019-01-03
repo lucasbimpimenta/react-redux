@@ -18,4 +18,8 @@ export default class EmpresaApi {
             })    
         }
     }
+
+    static salvar(dados) {
+        return axios.post(`http://www.gilogbh.des.mg.caixa/api/empresa/`, dados);
+    }
 }
